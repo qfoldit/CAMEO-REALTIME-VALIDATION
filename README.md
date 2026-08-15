@@ -108,10 +108,3 @@ one unknown this whole proposal depends on.
    it to `qfoldit.github.io`.
 5. Point the dashboard (see the HTML deliverable) at `state.json` once it
    exists — until then it reflects the specs/docs snapshot only.
-
-## 6. Explicitly out of scope here (unchanged from existing docs)
-
-Live, mid-match OpenStructure calls; live two-independent-run replication
-mid-match (`arena_showdown`'s corrected description, §3 of the runtime
-doc, already covers what *is* honestly buildable there); any workaround
-of the Verse sandbox.
