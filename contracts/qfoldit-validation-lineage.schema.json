@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/qfoldit/CAMEO-REALTIME-VALIDATION/blob/main/contracts/qfoldit-validation-lineage.schema.json",
+  "title": "qFoldIT Validator Lineage v1.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["missionId", "actionEnvelopeHash", "submissionId", "status", "engine", "engineVersion", "reference", "modelSha256", "validationVersion", "completedAt"],
+  "properties": {
+    "missionId": {"type": "string", "minLength": 1},
+    "actionEnvelopeHash": {"type": "string", "pattern": "^sha256:[A-Fa-f0-9]+$"},
+    "submissionId": {"type": "string", "format": "uuid"},
+    "status": {"const": "completed"},
+    "engine": {"type": "string", "minLength": 1},
+    "engineVersion": {"type": "string", "minLength": 1},
+    "reference": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["referenceId", "sha256", "format"],
+      "properties": {
+        "referenceId": {"type": "string", "minLength": 1},
+        "sha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+        "format": {"type": "string", "minLength": 1}
+      }
+    },
+    "modelSha256": {"type": "string", "pattern": "^[A-Fa-f0-9]{64}$"},
+    "validationVersion": {"type": "string", "minLength": 1},
+    "completedAt": {"type": "string", "format": "date-time"}
+  }
+}
