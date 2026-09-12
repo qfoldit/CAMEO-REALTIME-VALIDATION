@@ -1,0 +1,26 @@
+{
+  "schema": "qfoldit.scientific-boundary-adapter/1.0",
+  "adapterId": "cameo",
+  "adapterVersion": "qfoldit.cameo.boundary/1.0",
+  "authority": "scientific-validation-boundary",
+  "execution": "external-reconciliation",
+  "capabilities": [
+    "boundary-reconciliation",
+    "mission-profile",
+    "provenance-reconciliation"
+  ],
+  "inputContracts": [
+    "qfoldit.mission-contract/1.0",
+    "qfoldit.scientific-action-envelope/1.0"
+  ],
+  "outputContracts": [
+    "qfoldit.evidence/1.1",
+    "qfoldit.validation.completed/1.1"
+  ],
+  "configuration": {
+    "environmentFlag": "CAMEO_BOUNDARY_ENABLED",
+    "profileVariable": "CAMEO_BOUNDARY_PROFILE"
+  },
+  "scientificClaimBoundary": "This adapter registers and reconciles CAMEO-compatible validation context. It does not claim universal CAMEO benchmark certification without an explicit versioned benchmark profile and authoritative run evidence.",
+  "failClosed": true
+}
