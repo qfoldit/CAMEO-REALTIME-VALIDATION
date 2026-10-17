@@ -138,3 +138,12 @@ No evidence-gated settlement
 ```
 
 The system must never replace unavailable scientific validation with a synthetic success score.
+
+## Licence and third-party rights
+
+The root [LICENSE](LICENSE) contains the GNU Affero General Public License, version 3. The intended grant applies to material actually covered by that licence; file-specific notices and upstream licences continue to apply to any third-party material.
+
+References to CAMEO, OpenStructure, scientific publications, validators, game engines, trademarks or external services do not convey ownership, endorsement, certification or permission to redistribute those external assets. Preserve their own notices and licences. A successful workflow or architecture document is not by itself proof of an authorized live runtime integration or scientific certification.
+
+Before a production distribution, maintain contributor/ownership records, a dependency and asset licence inventory, and evidence that the shipped artefact includes the applicable notices.
+
