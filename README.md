@@ -1,5 +1,7 @@
 # Real-time CAMEO-style validation bus — UEFN ↔ OpenStructure ↔ GitHub Pages
 
+**Current normative baseline (2026-11-15):** [Foldnite FIC 1.0](https://github.com/qfoldit/UAG-SOS/blob/main/STANDARDS/FOLDNITE/FOLDNITE-BLOCK-INTEROPERABILITY-1.0.md) and [QSIS Core 1.0](https://github.com/qfoldit/UAG-SOS/blob/main/STANDARDS/QSIS/QSIS-CORE-AND-PROVIDER-COMPATIBILITY-1.0.md). The adapter's existing Action Envelope 1.0 / Evidence 1.1 references are legacy surfaces; this repository remains **migration_required** for Action Envelope 1.1 / validation.completed 1.2 / Evidence 1.2 until code-level migration and tests are evidenced. CAMEO reconciliation is not itself official CAMEO certification and does not automatically confer independent-validator authority.
+
 **Status:** design proposal / reconciliation architecture  
 **Principal Global Headquarters:** Elkridge, Maryland, USA.
 
